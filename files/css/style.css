@@ -294,6 +294,7 @@
   border: 3px solid #3498db;
 }
 .btn-purple {
+  transition: all 0.2s ease-in-out;
   margin-top: 30px;
   border-color: #6134bb;
   color: #6134bb;
@@ -617,6 +618,11 @@ textarea:hover {
   background: #d3c9ec;
   color: #fff;
   border: solid 2px #ab8fe4;
+}
+.btn-purple:hover {
+  border-color: #6134bb;
+  color: #6134bb;
+  transform: scale(1.1, 1.1)
 }
 form {
   width: 500px;

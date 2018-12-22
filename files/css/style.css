@@ -727,7 +727,7 @@
 
 /*INSTAGRAM SLIDER*/
 #instafeed {
-  height: 100%;
+  height: 605px;
   overflow: hidden;
   display: block;
   margin: 0 auto;
@@ -1341,6 +1341,7 @@ body {
   #instafeed {
     justify-content: center;
     width: 650px;
+    height: 775px;
     display: grid;
     grid-template-columns: 175px 175px 175px;
     grid-auto-rows: 175px;
@@ -1433,10 +1434,9 @@ body {
   }
   #instafeed {
     width: 310px;
-    display: grid;
+    height: 1010px;
     grid-template-columns: 150px 150px;
     grid-auto-rows: 150px;
-    grid-gap: 10px;
     padding-bottom: 45px;
   }
   .title-main {
@@ -1547,11 +1547,8 @@ body {
   }
   #instafeed {
     width: 310px;
-    display: grid;
     grid-template-columns: 150px 150px;
     grid-auto-rows: 150px;
-    grid-gap: 10px;
-    padding-bottom: 45px;
   }
   .logo-img-mobile  {
     top: 0;

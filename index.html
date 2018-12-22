@@ -235,7 +235,7 @@
 		  resolution: 'low_resolution',
 		  template: '<a class="animation-container" href="{{link}}"><img src="{{image}}" class="instagram-img"/><div class="insta-overlay"><div class="img-info"><img src="./files/img/icons/heart.svg" class="icon-sml"/><p>{{likes}}</p></div></div></a>',
 		  limit: '13',
-		  filter: function(image) {
+          filter: function(image) {
             return image.tags.indexOf('aaronmaybus') >= 0;
           }
 		});

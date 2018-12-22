@@ -1439,6 +1439,14 @@ body {
     grid-gap: 10px;
     padding-bottom: 45px;
   }
+  .title-main {
+    width: 352px;
+    left: 53%;
+  }
+  .title-main p  {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
 }
 @media all and (max-width: 479px) {
   .navbar-toggle {

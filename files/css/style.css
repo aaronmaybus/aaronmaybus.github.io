@@ -293,7 +293,12 @@
   color: #3498db;
   border: 3px solid #3498db;
 }
-
+.btn-purple {
+  margin-top: 30px;
+  border-color: #6134bb;
+  color: #6134bb;
+  opacity: 1;
+}
 @-webkit-keyframes slide {
     100% { 
       opacity: 1;
@@ -336,7 +341,7 @@
   display: none;
 }
 .title-main p, h1, h2 {
-  text-align: left;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 .title-main p  {
@@ -519,6 +524,9 @@
 .grey_bg {
   background: #3b3b3b;
 }
+.white_bg {
+  background: #e7e7e7;
+}
 .grey_bg section .col-md-12 {
   overflow: hidden;
   height: 30px;
@@ -561,13 +569,69 @@
 .text-block-info h1 {
   margin-bottom: 10px;
 }
+.contact-block {
+  text-align: center;
+}
+.contact-block p {
+  margin-bottom: 30px;
+}
 
-/*#gradient {
+.form-input {
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #3b3b3b;
   width: 100%;
-  height: 800px;
-  padding: 0px;
-  margin: 0px;
-}*/
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  border: 2px solid #6134bb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.form-input-container > p {
+  margin-bottom: 10px;
+}
+.form-name {
+  margin-bottom: 20px;
+}
+.btn-submit {
+  margin-top: 20px;
+  margin-left: 38%;
+  width: 120px; 
+  height: 40px;
+}
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0px 50px 0px 15px;
+  outline: none;
+  color: #ffffff;
+  border-bottom: none;
+  transition: all 0.2s ease-in-out;
+}
+input:hover,
+textarea:hover {
+  background: #d3c9ec;
+  color: #fff;
+  border: solid 2px #ab8fe4;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+form .col-md-4,
+form .col-md-8,
+form .col-md-12 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+form .col-md-12 textarea {
+  height: 100px;
+  transition: all 0.2s ease-in-out;
+}
 #about {
   background: rgba(0,0,0,0.5);
 }
@@ -728,10 +792,10 @@
 /*INSTAGRAM SLIDER*/
 #instafeed {
   height: 618px;
-  margin-bottom: 20px;
   overflow: hidden;
   display: block;
   margin: 0 auto;
+  margin-bottom: 20px;
   padding-top: 15px;
   justify-content: center;
 }

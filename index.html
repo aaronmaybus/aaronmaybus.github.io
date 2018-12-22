@@ -178,11 +178,11 @@
 	</div>
 	<div class="block grey_bg">
 		<section class="text-block-info anchor-text">
-			<div id="instafeed">
+			<div class="instafeed" id="contact" >
 		    </div>
 		    <div class="col-md-12">
 		    	<div class="center-middle">
-					<a  id="contact" class="links" href="https://www.instagram.com/amaybus/" target="_blank"><img src="./files/img/logos/instagram-logo.svg" class="icon" alt="Instagram"></a><a class="links social_link" id="go-home4" href="https://www.instagram.com/amaybus/" target="_blank">View more on Instagram</a>
+					<a class="links" href="https://www.instagram.com/amaybus/" target="_blank"><img src="./files/img/logos/instagram-logo.svg" class="icon" alt="Instagram"></a><a class="links social_link" href="https://www.instagram.com/amaybus/" target="_blank">View more on Instagram</a>
 				</div>
 			</div>
 		</section>
@@ -270,6 +270,7 @@
 	    var userFeed = new Instafeed({
 		  get: 'user',
 		  userId: 51024824,
+		  target: 'contact',
 		  accessToken: '51024824.caab68d.bb2161a6a3ed4407819398c960395c7f',
 		  resolution: 'low_resolution',
 		  template: '<a class="animation-container" href="{{link}}"><img src="{{image}}" class="instagram-img"/><div class="insta-overlay"><div class="img-info"><img src="./files/img/icons/heart.svg" class="icon-sml"/><p>{{likes}}</p></div></div></a>',

@@ -796,8 +796,8 @@ form .col-md-12 textarea {
   padding: 10px 15px 10px 15px;
 }
 
-/*INSTAGRAM SLIDER*/
-#instafeed {
+/*INSTAGRAM*/
+.instafeed {
   height: 618px;
   overflow: hidden;
   display: block;
@@ -1409,7 +1409,7 @@ body {
   .animation-container {
     margin: 0;
   }
-  #instafeed {
+  .instafeed {
     justify-content: center;
     width: 650px;
     height: 755px;
@@ -1506,7 +1506,7 @@ body {
   .instagram-img {
     height: 150px;
   }
-  #instafeed {
+  .instafeed {
     width: 310px;
     height: 975px;
     grid-template-columns: 150px 150px;
@@ -1622,7 +1622,7 @@ body {
   .navbar-right {
     right: 4px;
   }
-  #instafeed {
+  .instafeed {
     width: 310px;
     grid-template-columns: 150px 150px;
     grid-auto-rows: 150px;

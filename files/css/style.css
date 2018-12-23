@@ -269,7 +269,6 @@
   background-image: none;
   border: 3px solid white;
   white-space: nowrap;
-  padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
   border-radius: 4px;
@@ -283,9 +282,12 @@
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   animation-delay: 6s;
-  opacity: 0;
+  opacity: 1;
+  height: 35px;
+  padding: 0;
 }
 .btn-animated a {
+  padding: 10px 12px;
   color: white;
   transition: all 0.3s ease;
 }

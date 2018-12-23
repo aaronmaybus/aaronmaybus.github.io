@@ -282,7 +282,7 @@
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   animation-delay: 6s;
-  opacity: 1;
+  opacity: 0;
   height: 35px;
   padding: 0;
 }
@@ -306,6 +306,8 @@
   border-color: #6134bb;
   color: #6134bb;
   opacity: 1;
+  height: 40px;
+  width: 60px;
 }
 .btn-purple:hover {
   border-color: #6134bb;

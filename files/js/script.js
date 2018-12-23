@@ -61,7 +61,7 @@ function initialise() {
       slidesToScroll: 1,
       // autoplay: false
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 4000
     });
     $('.jarallax').jarallax({
       speed: 0.2

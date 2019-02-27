@@ -847,6 +847,8 @@ form .col-md-12 textarea {
 
 .instagram-img {
   height: 175px;
+  /*Stretch out photos that are too skinny*/
+  min-width: 175px;
   border-radius: 6px;
   /*transition: all 0.3s ease;*/
   -webkit-perspective: 1000;

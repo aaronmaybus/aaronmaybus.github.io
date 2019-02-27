@@ -344,6 +344,7 @@
   z-index: -1 !important;
   position: relative !important;
   object-fit: cover;
+  background-image: url(../img/banner.jpg);
   position: absolute !important;
 }
 .title-block-main {

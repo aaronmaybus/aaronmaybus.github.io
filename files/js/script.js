@@ -70,10 +70,20 @@ function initialise() {
       speed: 0.5
     });   
     $("div:regex(id, .*jarallax-container-.*)").css({"z-index": "unset"});
+    $("div:regex(id, .*video-worker-.*)").addClass('edge-compatibility');
     // Check if not on Chrome, and if on Edge/Safari not on mobile
     // If on mobile keep parallax enabled
     if((is_edge_or_ie) && !mobilecheck()){
       $('.jarallax-img').addClass('edge-compatibility');
+      $('body').on("mousewheel", function () {
+            // remove default behavior
+            event.preventDefault(); 
+
+            //scroll without smoothing
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
     }
 
     $('body').scrollspy({
@@ -112,6 +122,8 @@ $(window).resize(function () {
         speed: 0.5
     });
     $('.center').slick('unslick');
+    $("body").css("display", "none");
+    $("body").css("display", "block");
     initialise();
     var currentSlide = $('.center').slick('slickCurrentSlide');
     currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);

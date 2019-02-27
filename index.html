@@ -20,14 +20,14 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./files/css/pace.simple.css">
-	<link href="./files/css/style.css?v=2.5" rel="stylesheet">
+	<link href="./files/css/style.css?v=2.6" rel="stylesheet">
 </head>
 <body>
-	<div class="loading">
+	<!-- <div class="loading">
 	    <div class="loader-container">
 	    	<img src="./files/img/logo.png" class="ld ld-breath">
 		</div>
-	</div>
+	</div> -->
 	<div class="hidden-home" id="home">
 	</div>
 	<div class="fixed_bg">
@@ -82,8 +82,11 @@
 		</video>
 	</div> -->
 	<div class="title-block-main">
-		<div class="jarallax banner-jarallax">
-	    	<img class="jarallax-img" src="./files/img/banner.jpg" alt="">
+		<div class="video_contain">
+		</div>
+		<div class="jarallax video" data-jarallax data-jarallax-video="mp4:./files/img/banner.mp4,webm:./files/img/banner.webm">
+		    <!-- <source src="./files/img/banner.webm" type="video/webm"> -->
+		    <!-- <source src="./files/img/banner.mp4" type="video/mp4"> -->
 		</div>
 	</div>
 	<div class="title-block-spacer">
@@ -262,7 +265,8 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 	<!-- Jarallax -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.0/jarallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.7/jarallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.7/jarallax-video.min.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="
 	sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -291,6 +295,7 @@
 		};
 		ScrollReveal().reveal('.pull-quote', slideUp);
 		ScrollReveal().reveal('#instafeed', slideUp);
+    	// document.getElementById('promo').play(); 
 	</script>
 </body>
 </html>	

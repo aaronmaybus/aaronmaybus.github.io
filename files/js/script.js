@@ -64,27 +64,23 @@ function initialise() {
       autoplaySpeed: 4000
     });
     $('.jarallax').jarallax({
-      speed: 0.2
-    });
-    $('.jarallax-sml').jarallax({
-      speed: 0.5
-    });   
+        speed: 0.2
+      });
     $("div:regex(id, .*jarallax-container-.*)").css({"z-index": "unset"});
     $("div:regex(id, .*video-worker-.*)").addClass('edge-compatibility');
     // Check if not on Chrome, and if on Edge/Safari not on mobile
     // If on mobile keep parallax enabled
-    if((is_edge_or_ie) && !mobilecheck()){
-      $('.jarallax-img').addClass('edge-compatibility');
-      $('body').on("mousewheel", function () {
-            // remove default behavior
-            event.preventDefault(); 
-
-            //scroll without smoothing
-            var wheelDelta = event.wheelDelta;
-            var currentScrollPosition = window.pageYOffset;
-            window.scrollTo(0, currentScrollPosition - wheelDelta);
-        });
-    }
+    // if((is_edge_or_ie) && !mobilecheck()){
+    //   // $('.jarallax-img').addClass('edge-compatibility');
+    //   $('.jarallax-img').css('display', 'none');
+    //   $('.edge-visible').css('display', 'block');
+    //   if(is_edge_or_ie) {
+       
+    //   }
+    // }
+    // else {
+      
+    // }
 
     $('body').scrollspy({
       target: '#topnav',
@@ -113,17 +109,11 @@ $(window).scroll(function() {
 });
 
 $(window).resize(function () {
-    $('.jarallax').jarallax('destroy');
-    // $('.jarallax-img').css('width', $(window).width());
-    $('.jarallax').jarallax({
-        speed: 0.2
-    });
-    $('.jarallax-sml').jarallax({
-        speed: 0.5
-    });
     $('.center').slick('unslick');
-    $("body").css("display", "none");
-    $("body").css("display", "block");
+    if(is_edge_or_ie) {
+      $("body").css("display", "none");
+      $("body").css("display", "block");
+    }
     initialise();
     var currentSlide = $('.center').slick('slickCurrentSlide');
     currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);
@@ -144,12 +134,12 @@ $(window).scroll(function () {
 
 
 
-$(window).scroll(function() {
-    if(is_safari || is_edge_or_ie){
-    }
-    else{
-    }
-});
+// $(window).scroll(function() {
+//     if(is_safari || is_edge_or_ie){
+//     }
+//     else{
+//     }
+// });
 
 Pace.restart();
 Pace.on("done", function(){

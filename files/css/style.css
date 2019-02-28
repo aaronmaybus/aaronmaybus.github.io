@@ -483,10 +483,10 @@
 .jarallax {
   height: 70vh;
 }
-.jarallax-sml {
-  height: 157px;
-  z-index: 0;
+.edge-visible {
+  display: none;
 }
+
 .media-title-block {
   height: 60vh;
   position: relative;

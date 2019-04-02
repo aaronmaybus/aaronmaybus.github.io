@@ -144,7 +144,7 @@ $(window).scroll(function () {
 Pace.restart();
 Pace.on("done", function(){
    var y = $(window).scrollTop();  //your current y position on the page
-   $('.loading').slideUp("slow", function() {
+   $('.loading').slideUp(500, function() {
     });
     // Only show main text banner after loading complete
     $('.title-main').css('display', 'block');

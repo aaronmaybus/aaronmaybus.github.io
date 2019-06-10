@@ -344,7 +344,6 @@
   z-index: -1 !important;
   position: relative !important;
   object-fit: cover;
-  background-image: url(../img/banner.jpg);
   position: absolute !important;
 }
 .title-block-main {
@@ -354,13 +353,13 @@
   background: rgba(0,0,0,0.28);
   left: 0;
   width: 100%;
-  overflow: hidden;
   /*top: -80px;*/
 }
 .title-block-spacer {
   height: 100vh;
   background: rgba(0,0,0,0.4);
   position: absolute;
+  overflow: hidden;
   z-index: 16;
   width: 100%;
   top: 157px;

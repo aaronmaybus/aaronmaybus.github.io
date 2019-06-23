@@ -33,6 +33,11 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 function initialise() {
+    // All animations will take exactly 1000ms
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true
+    });
     if (trident > 0 || edge > 0) {
       is_edge_or_ie = true;
     }
@@ -68,21 +73,6 @@ function initialise() {
       target: '#topnav',
       offset: 50
     });
-    bindVelocity();
-}
-
-function bindVelocity(){
-  // bind click event to all internal page anchors
-  $('a[href*="#"]').on('click', function (e) {
-      // prevent default action and bubbling
-      e.preventDefault();
-      e.stopPropagation();
-      // set target to anchor's "href" attribute
-      var target = $(this).attr('href');
-
-      // scroll to each target
-      $(target).velocity("scroll", 1000);
-  });
 }
 
 $(document).ready(function () {

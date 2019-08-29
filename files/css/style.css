@@ -938,7 +938,21 @@ form .col-md-12 textarea {
   width: 15px;
   height: 15px;
 }
-
+.copyright,
+.footer .col-md-12 p {
+  font-size: 12px;   
+}
+.copyright {
+  color: white;
+}
+.copyright a,
+.footer .col-md-12 a {
+  text-decoration: underline;
+  color: white;
+}
+.copyright {
+  text-align: center;
+}
 .contact-icon {
   margin-right: 15px;
 }

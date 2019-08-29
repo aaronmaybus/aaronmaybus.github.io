@@ -63,9 +63,16 @@ function initialise() {
       autoplay: true,
       autoplaySpeed: 4000
     });
-    $('.jarallax').jarallax({
-      speed: 1.2
-    });
+    if($(window).width() < 991) {
+      $('.jarallax').jarallax({
+        speed: 1.2
+      });
+    }
+    else {
+      $('.jarallax').jarallax({
+        speed: 0.2
+      });
+    } 
     $("div:regex(id, .*jarallax-container-.*)").css({"z-index": "unset"});
     $("div:regex(id, .*video-worker-.*)").addClass('edge-compatibility');
 

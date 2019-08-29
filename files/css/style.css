@@ -1478,6 +1478,9 @@ body {
   video {
     margin-top: -150%;
   }
+  .contact-icon {
+    margin-right: 8px;
+  }
 }
 @media (max-width: 767px) {
   /*.bg_main {
@@ -1582,6 +1585,13 @@ body {
   }
   .btn-purple {
     left: 0px;
+  }
+  .contact-icon {
+    margin-right: 15px;
+  }
+  .footer .col-md-3 a p,
+  .footer .col-md-12 p {
+    font-size: 11px;
   }
 }
 @media all and (max-width: 479px) {

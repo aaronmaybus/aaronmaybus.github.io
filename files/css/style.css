@@ -218,6 +218,7 @@
   bottom: 0;
   background: #e7e7e7;
   z-index : 1001; 
+  transition: top 0.8s ease, opacity 3s ease;
 }
 
 .ld.ld-breath {

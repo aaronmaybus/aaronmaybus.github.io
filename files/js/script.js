@@ -135,9 +135,10 @@ $(window).scroll(function () {
 
 Pace.restart();
 Pace.on("done", function(){
-   var y = $(window).scrollTop();  //your current y position on the page
-   $('.loading').slideUp(500, function() {
-    });
+  var y = $(window).scrollTop();  //your current y position on the page
+  $('.loading').css("opacity", "0")
+  $('.loading').css("top", "-100%")
+
     // Only show main text banner after loading complete
     $('.title-main').css('display', 'block');
     $('.jarallax').jarallax({

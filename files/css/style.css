@@ -953,6 +953,7 @@ form .col-md-12 textarea {
 }
 .copyright {
   text-align: center;
+  opacity: 0.4;
 }
 .contact-icon {
   margin-right: 15px;

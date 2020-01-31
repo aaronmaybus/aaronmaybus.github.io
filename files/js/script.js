@@ -84,6 +84,8 @@ function initialise() {
 
 $(document).ready(function () {
   initialise();
+  var theDate = new Date(); 
+  $(".year").text(theDate.getFullYear());
 });
 
 $(window).scroll(function() {

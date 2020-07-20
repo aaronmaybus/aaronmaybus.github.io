@@ -837,7 +837,6 @@ form .col-md-12 textarea {
 
 /*INSTAGRAM*/
 .instafeed {
-  height: 595px;
   overflow: hidden;
   display: block;
   margin: 0 auto;
@@ -845,14 +844,15 @@ form .col-md-12 textarea {
   padding-top: 15px;
   justify-content: center;
 }
-
-.instagram-img {
-  height: 175px;
+.instagram_gallery {
+  justify-content: center;
+}
+.instagram_gallery img {
+  height: auto;
   /*Stretch out photos that are too skinny*/
-  min-width: 175px;
+  margin: 0.5%;
   border-radius: 6px;
   /*transition: all 0.3s ease;*/
-  -webkit-perspective: 1000;
 }
 
 /*.instagram-img:hover { 
@@ -1631,6 +1631,10 @@ body {
   }
 }
 @media all and (max-width: 479px) {
+  .instagram_gallery img {
+    width: 47% !important;
+    margin: 1.5% 1.5% !important;
+  }
   .navbar-toggle {
     top: 0px;
     left: 23px;

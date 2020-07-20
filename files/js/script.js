@@ -73,6 +73,16 @@ function initialise() {
         speed: 0.2
       });
     } 
+    $.instagramFeed({
+      'username': 'amaybus',
+      'container': "#instagram-feed",
+      'items': 16,
+      'items_per_row': 4,
+      'tag':'djaaron',
+      'margin': 0.5,
+      'display_profile':false,
+      'display_biography':false
+    });
     $("div:regex(id, .*jarallax-container-.*)").css({"z-index": "unset"});
     $("div:regex(id, .*video-worker-.*)").addClass('edge-compatibility');
 

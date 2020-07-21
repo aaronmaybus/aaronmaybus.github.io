@@ -74,14 +74,15 @@ function initialise() {
       });
     } 
     $.instagramFeed({
-      'username': 'amaybus',
+      // 'username': 'amaybus',
       'container': "#instagram-feed",
       'items': 16,
       'items_per_row': 4,
-      'tag':'djaaron',
+      'tag':'aaronmaybus',
       'margin': 0.5,
       'display_profile':false,
-      'display_biography':false
+      'display_biography':false,
+      'styling': false
     });
     $("div:regex(id, .*jarallax-container-.*)").css({"z-index": "unset"});
     $("div:regex(id, .*video-worker-.*)").addClass('edge-compatibility');

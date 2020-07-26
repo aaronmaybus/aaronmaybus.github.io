@@ -95,6 +95,13 @@ function initialise() {
 
 $(document).ready(function () {
   initialise();
+  setTimeout(function(){
+    $('.parallax').paroller({
+      factor: '0.2',
+      type: 'foreground',
+      direction: 'vertical'
+    }); 
+  }, 2000);
   var theDate = new Date(); 
   $(".year").text(theDate.getFullYear());
 });

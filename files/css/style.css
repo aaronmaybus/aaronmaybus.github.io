@@ -1233,9 +1233,12 @@ footer a:hover {
   .navbar-nav {
     margin: 0px -15px;
     height: 100vh;
-    background: white;
+    background: #161622;
     width: 100%;
     margin: 0;
+  }
+  .navbar-default .navbar-nav .active:after {
+    display: none;
   }
   .navbar-nav li {
     width: 100%;
@@ -1336,13 +1339,6 @@ footer a:hover {
   }
   .btn-animated {
     font-size: 12px;
-  }
-  .navbar-nav {
-    margin: 0px -15px;
-    height: 100vh;
-    background: white;
-    width: 100%;
-    margin: 0;
   }
   .navbar-default .navbar-nav > li > a.active {
     border-bottom: none;

@@ -1218,10 +1218,10 @@ footer a:hover {
 }
 @media only screen and (max-width: 767px) {
   .navbar-left {
-    display: none;
+    right: 15px;
   }
   .logo-img-mobile {
-    width: 200px;
+    width: 180px;
     display: inline-block;
     position: relative;
     top: 0px;

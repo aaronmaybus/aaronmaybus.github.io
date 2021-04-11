@@ -96,20 +96,36 @@ function createInstafeed(){
     'items': 8
   });
 }
+function truncateInstagramPostString(){
+  var html_before_tags;
+  $('.j-message p').each(function(){
+    html_before_tags = $(this).html().split('<br>•')[0];
+    $(this).html(html_before_tags);
+  });
+}
+function listenForJuicerClick(){
+  $('.juicer-feed .j-paginate').click(function(){
+    setTimeout(function(){
+      truncateInstagramPostString();
+    }, 1500);
+  });
+  $('.feed-item').click(function(){
+    setTimeout(function(){
+      truncateInstagramPostString();
+    }, 10);
+  });
+}
 $(window).scroll(function() {
     makeNavSticky();
 });
 $(window).resize(function () {
-    $('.center').slick('unslick');
-    var currentSlide = $('.center').slick('slickCurrentSlide');
-    currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);
+  // Remove the fade_out class from any of the package links
+  // in case they were hovered when the resize occurred
+  $(".package_link").removeClass("fade_out");
+  $('.center').slick('unslick');
+  var currentSlide = $('.center').slick('slickCurrentSlide');
+  currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);
 });
-function loaderAnimation(){
-  var whiteTimeout = setInterval(function(){
-    $(".loader-container .logo-white").toggleClass('show');
-  }, 2000);
-}
-loaderAnimation();
 Pace.restart();
 Pace.on("done", function(){
   var y = $(window).scrollTop();  //your current y position on the page
@@ -122,7 +138,6 @@ $(document).ready(function () {
   bindVelocity();
   hoverPackages();
   makeNavSticky();
-
   $('.center').slick({
     centerPadding: '60px',
     slidesToShow: 1,
@@ -136,15 +151,19 @@ $(document).ready(function () {
     target: '#topnav',
     offset: 50
   });
-
+  setTimeout(function(){
+    truncateInstagramPostString();
+  }, 400);
   setTimeout(function(){
     $('.parallax').paroller({
       factor: '0.2',
       type: 'foreground',
       direction: 'vertical'
     }); 
+    truncateInstagramPostString();
+    listenForJuicerClick();
   }, 2000);
-
+  
   var theDate = new Date(); 
   $(".year").text(theDate.getFullYear());
 });

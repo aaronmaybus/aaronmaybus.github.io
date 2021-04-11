@@ -107,7 +107,7 @@ $(window).resize(function () {
 function loaderAnimation(){
   var whiteTimeout = setInterval(function(){
     $(".loader-container .logo-white").toggleClass('show');
-  }, 1000);
+  }, 2000);
 }
 loaderAnimation();
 Pace.restart();

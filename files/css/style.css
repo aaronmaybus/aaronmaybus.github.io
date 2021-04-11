@@ -431,6 +431,9 @@ body {
 
 /*------------MEDIA SECTION-----------*/
 
+.block.media {
+  margin-top: 0px;
+}
 .block.media h1 {
   display: none !important;
 }
@@ -443,6 +446,7 @@ body {
 .juicer-feed.modern li.feed-item {
   cursor: pointer;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .j-overlay-content,
 .j-post-overlay.juicer-feed {
@@ -515,6 +519,9 @@ body {
   height: 16px;
   width: 16px;
   background-size: 16px 16px;
+}
+.juicer-feed.modern .j-poster {
+  display: none;
 }
 /*------------PACKAGES SECTION-----------*/
 

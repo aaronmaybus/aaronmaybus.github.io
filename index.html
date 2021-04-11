@@ -188,36 +188,42 @@
 	<section class="packages">
 		<h2>A package to suit any event.</h2>
 		<div class="wrap_contain">
-			<div class="package">
-				<picture class="image_container">
-					<img src="./files/img/packages/package_dj.jpg">
-				</picture>
-				<div class="image_overlay"></div>
-				<div class="text">
-					<p class="title">DJ</p>
-					<p>Suitable for all occasions, from Corporate Events to House parties!</p>
+			<a class="package_link" href="#package-dj">
+				<div class="package">
+					<picture class="image_container">
+						<img src="./files/img/packages/package_dj.jpg">
+					</picture>
+					<div class="image_overlay"></div>
+					<div class="text">
+						<p class="title">DJ</p>
+						<p>Suitable for all occasions, from Corporate Events to House parties!</p>
+					</div>
 				</div>
-			</div>
-			<div class="package">
-				<picture class="image_container">
-					<img src="./files/img/packages/package_sax.jpg">
-				</picture>
-				<div class="image_overlay"></div>
-				<div class="text">
-					<p class="title">DJ + Sax</p>
-					<p>Add some more energy by having DJ Aaron joined by one of QLDs best Sax players!</p>
+			</a>
+			<a class="package_link" href="#package-sax">
+				<div class="package">
+					<picture class="image_container">
+						<img src="./files/img/packages/package_sax.jpg">
+					</picture>
+					<div class="image_overlay"></div>
+					<div class="text">
+						<p class="title">DJ + Sax</p>
+						<p>Add some more energy by having DJ Aaron joined by one of QLDs best Sax players!</p>
+					</div>
 				</div>
-			</div>
-			<div class="package">
-				<picture class="image_container">
-					<img src="./files/img/packages/package_singer.jpg">
-				</picture>
-				<div class="image_overlay"></div>
-				<div class="text">
-					<p class="title">DJ + Singer</p>
-					<p>Want the additive of some live vocals? DJ Aaron works with some of QLDs top Corporate Entertainers!</p>
+			</a>
+			<a class="package_link" href="#package-singer">
+				<div class="package">
+					<picture class="image_container">
+						<img src="./files/img/packages/package_singer.jpg">
+					</picture>
+					<div class="image_overlay"></div>
+					<div class="text">
+						<p class="title">DJ + Singer</p>
+						<p>Want the additive of some live vocals? DJ Aaron works with some of QLDs top Corporate Entertainers!</p>
+					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	</section>
 	<div class="parallax-wrapper" id="contact">
@@ -237,21 +243,15 @@
 				<h2>Interested? Let me know what you need!</h2>
 				<form action="https://formspree.io/aaronmaybus@gmail.com" method="POST">
 					<div class="col-md-4">
-						<input type="text" class="form-input" id="name" name="first_name" pattern="[a-zA-Z]+" 
-						oninvalid="setCustomValidity('Please a valid name.')"
-						onchange="try{setCustomValidity('')}catch(e){}"
-						required placeholder="Name">
+						<input type="text" class="form-input" id="name" name="first_name" placeholder="Name" required>
 					</div>
 					<div class="col-md-8">
-						<input type="text" class="form-input" id="subject" name="subject" pattern="[a-zA-Z]+{4,50}" 
-						oninvalid="setCustomValidity('Please enter a valid subject line.')"
-						onchange="try{setCustomValidity('')}catch(e){}"
-						required placeholder="Subject">
+						<input type="text" class="form-input" id="subject" name="subject" placeholder="Subject" required>
 					</div>
 					<div class="col-md-8">
 						<input type="email" class="form-input" id="email" name="_replyto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 						oninvalid="setCustomValidity('Please enter a valid email address.')"
-						onchange="try{setCustomValidity('')}catch(e){}" required placeholder="Email">
+						onchange="try{setCustomValidity('')}catch(e){}" placeholder="Email" required>
 					</div>
 					<div class="col-md-4">
 						<input type="text" class="form-input" id="phone_no" name="phone_no" pattern="[0-9]{8,10}" 
@@ -259,9 +259,7 @@
 						onchange="try{setCustomValidity('')}catch(e){}" required placeholder="Phone Number">
 					</div>
 					<div class="col-md-12">
-						<textarea cols="40" rows="5" type="text" class="form-input" id="message" name="message" pattern="{10,1000}" 
-						oninvalid="setCustomValidity('Please enter a valid message.')"
-						onchange="try{setCustomValidity('')}catch(e){}" required placeholder="Your message"></textarea>
+						<textarea cols="40" rows="5" type="text" class="form-input" id="message" name="message" placeholder="Your message" required></textarea>
 					</div>
 				  	<input type="submit" class="btn-animated btn-purple" value="SEND">
 				</form>

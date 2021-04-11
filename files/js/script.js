@@ -40,12 +40,12 @@ function makeNavSticky(){
   } 
 }
 function hoverPackages(){
-  $('.package').hover(
+  $('.package_link').hover(
     function() {
-      $(".package").not(this).addClass("fade_out");
+      $(".package_link").not(this).addClass("fade_out");
     },
      function() {
-      $(".package").not(this).removeClass("fade_out");
+      $(".package_link").not(this).removeClass("fade_out");
     },
   );
 }
@@ -58,44 +58,25 @@ function bindVelocity(){
     e.preventDefault();
     e.stopPropagation();
     // set target to anchor's "href" attribute
-    if(target == "#contact-vip") {
-        $("#message").val("Hello, I'd like to enquire about the availability of VIP access. ");    
+    if(target == "#package-dj") {
+        $("#message").val("Hi, I'm interested in the DJ package. ");    
         target = "#contact";  
         setTimeout(function(){
-          $( "#message" ).focus();
+          $( "#name" ).focus();
         }, 1200);  
     }
-    if(target == "#contact-yacht") {
-        $("#message").val("Hello, I'd like to enquire about the yacht deposit and fees. ");    
+    if(target == "#package-sax") {
+        $("#message").val("Hi, I'm interested in the DJ + Sax package. ");    
         target = "#contact";  
         setTimeout(function(){
-          $( "#message" ).focus();
+          $( "#name" ).focus();
         }, 1200);  
     }
-    if(target == "#contact-private") {
-        $("#message").val("Hello, I'd like to enquire about booking a private event. ");    
+    if(target == "#package-singer") {
+        $("#message").val("Hi, I'm interested in the DJ + Singer package. ");    
         target = "#contact";  
         setTimeout(function(){
-          $( "#message" ).focus();
-        }, 1200);  
-    }
-    if(target == "#contact-depart") {
-        $("#message").val("Hello, I'd like to enquire about docking elsewhere. ");    
-        target = "#contact";  
-        setTimeout(function(){
-          $( "#message" ).focus();
-        }, 1200);  
-    }
-    if(target == "#contact-video") {
-        $("#message").val("Hello, I'd like to enquire about the pricing for a videographer. ");    
-        target = "#contact";  
-        setTimeout(function(){
-          $( "#message" ).focus();
-        }, 1200);  
-    }
-    if(target == "#sign-up") {
-      setTimeout(function(){
-          $( "#first-name" ).focus();
+          $( "#name" ).focus();
         }, 1200);  
     }
     // scroll to each target

@@ -369,25 +369,32 @@ p {
   align-items: center;
   margin: 0 auto;
 }
+.packages .package_link {
+  display: block;
+  width: 33%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.packages .package_link:hover {
+  text-decoration: none;
+  color: #fff;
+}
 .packages .package {
   position: relative;
-  width: 33%;
   height: 500px;
   display: flex;
   align-items: center;
   border-radius: 7px;
-  margin-left: 10px;
-  margin-right: 10px;
   overflow: hidden;
   backface-visibility: hidden;
   cursor: pointer;
 }
-.packages .package.fade_out {
+.packages .package_link.fade_out {
   opacity: 0.3;
   transform: perspective(999px) translateZ(0) scale3d(0.95, 0.95, 1);
   width: 20%;
 }
-.packages .package.fade_out .text {
+.packages .package_link.fade_out .text {
   transform: perspective(999px) translateZ(0) scale3d(0.9, 0.9, 1);
 }
 .packages .package img {
@@ -432,7 +439,7 @@ p {
 
 /*Hover effects*/
 
-.packages .package:hover {
+.packages .package_link:hover {
   transform: perspective(999px) scale3d(1.03, 1.03, 1);
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   width: 40%;
@@ -579,11 +586,12 @@ form .col-md-12 textarea {
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: grab;
-  transform: translateZ(0);
+  transform: perspective(999px) translateZ(0);
   backface-visibility: hidden;
 }
 .slider:hover { 
-  transform: translateZ(0) scale3d(1.02, 1.02, 1);
+  transform: translateZ(0) perspective(999px) scale3d(1.01, 1.01, 1);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .slick-prev {
   left: -25px;
@@ -659,6 +667,8 @@ form .col-md-12 textarea {
   color: white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  user-select: none;
+  transform: translateZ(0) perspective(999px)
 }
 .caption .center-middle {
   padding: 10px 15px 10px 15px;

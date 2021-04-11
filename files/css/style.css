@@ -16,6 +16,11 @@ p {
   text-decoration: none !important;
   color: #fff !important;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+} 
 /*-----PAGE LOAD BAR-----*/
 
 .loading {
@@ -216,18 +221,64 @@ p {
   padding: 4rem 2rem;
   top: -300px;
 }
-/*.body-container {
-  /*margin: 80px;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-  color: #3b3b3b;
-  background: #e7e7e7;
+
+/*Floating title elements*/
+
+.title-center {
+  padding: 10px 15px;
   z-index: 1;
-  -webkit-box-shadow: -1px -1px 25px 2px rgba(150,150,150,1);
-  -moz-box-shadow: -1px -1px 25px 2px rgba(150,150,150,1);
-  box-shadow: -1px -1px 25px 2px rgba(150,150,150,1);
-}*/
+  white-space: nowrap;
+  background: #13131c;
+  border-radius: 6px;
+}
+.title-center h1 {
+  margin: 0;
+  /* Fallback: Set a background color. */
+  background-color: #7b00d1 ;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(91deg,#a000f5,#7b00d1 47%,#6300ba);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.title-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: none;
+  z-index: 12;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px 10px 10px;
+}
+
+.title-vertical-line {
+  border-left: 1px solid #9b9b9b;
+  position: absolute;
+  left: 50%;
+  top: 101%;
+  /*top: 180%;*/
+  background: none;
+  z-index: 1;
+  height: 380px;
+  display: inline-block;
+}
+.add-top-padding {
+  padding-top: 150px;
+  padding-bottom: 0px;
+}
+.touch *{
+  background-attachment: scroll!important;
+}
+
 /*------------ABOUT SECTION------------*/
 .block {
   transition: all 0.4s ease;
@@ -353,7 +404,7 @@ p {
 
 .packages {
   height: 100%;
-  background: rgba(23,23,30,.85);
+  background: rgba(23,23,30,.96);
   padding: 20px 40px 40px 40px;
 }
 .packages * {
@@ -677,12 +728,65 @@ form .col-md-12 textarea {
 
 /*------------------------FOOTER------------------------*/
 
+footer {
+  background-color: #1d1d1f;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0 10px 0;
+  font-weight: 600;
+}
+footer .footer_links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer_item {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 5px 0px;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+footer .footer_item:hover {
+  box-shadow: rgb(0 0 0 / 20%) 2px 2px 5px inset, rgb(255 255 255 / 1%) -5px -5px 10px inset;
+}
+footer .footer_item .social_type {
+  color: white;
+  margin-top: 10px;
+  font-size: 13px; 
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+footer .footer_item p {
+  color: #9b9b9b;
+  font-size: 13px; 
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+footer .copyright_info {
+  width: 100%;
+  color: #9b9b9b; 
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+}
+footer .copyright_info p {
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
 .social_link {
   margin-left: 10px;
   color: #e7e7e7;
   text-decoration: none; 
 }
-
 .links {
   text-decoration: none;
   color: #e7e7e7;
@@ -706,21 +810,6 @@ form .col-md-12 textarea {
   width: 15px;
   height: 15px;
 }
-.copyright,
-.footer .col-md-12 p {
-  font-size: 12px;   
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  text-align: center;
-}
-.copyright {
-  color: white;
-}
-.copyright a,
-.footer .col-md-12 a {
-  text-decoration: underline;
-  color: white;
-}
 .copyright {
   text-align: center;
   opacity: 0.4;
@@ -728,16 +817,13 @@ form .col-md-12 textarea {
 .contact-icon {
   margin-right: 15px;
 }
-
 .contact-icon-footer {
   margin: 0px;
 }
-
 .phone {
   width: 12px;
   height: 12px;
 }
-
 .email {
   height: 17px;
   width: 17px;
@@ -746,124 +832,7 @@ form .col-md-12 textarea {
   height: 18px;
   width: 18px;
 }
-.title-center {
-  padding: 10px 15px;
-  z-index: 1;
-  white-space: nowrap;
-  background: #13131c;
-  border-radius: 6px;
-}
-.title-center h1 {
-  margin: 0;
-  /* Fallback: Set a background color. */
-  background-color: #7b00d1 ;
-  
-  /* Create the gradient. */
-  background-image: linear-gradient(91deg,#a000f5,#7b00d1 47%,#6300ba);
-  
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.title-outline {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: none;
-  z-index: 12;
-  transform: translate(-50%, -50%);
-  padding: 10px 10px 10px 10px;
-}
-
-.title-vertical-line {
-  border-left: 1px solid #9b9b9b;
-  position: absolute;
-  left: 50%;
-  top: 101%;
-  /*top: 180%;*/
-  background: none;
-  z-index: 1;
-  height: 380px;
-  display: inline-block;
-}
-.add-top-padding {
-  padding-top: 150px;
-  padding-bottom: 0px;
-}
-.touch *{
-  background-attachment: scroll!important;
-}
-
-/* RESPONSIVE DIVS */
-
-html {
-  overflow-x: hidden;
-  width:100%;
-}
-body {
-  width: 100%;
-  overflow-x: hidden;
-} 
-.fixed_bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-}
-
-.bg_cover {
-  background: url('../img/logo_banner_back.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-::after, ::before {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-.footer .col-md-3 {
-  text-align: center;
-}
-.footer .col-md-3 p {
-  color: white;
-  margin-top: 10px;
-  font-size: 13px; 
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
-.footer .col-md-3 a p {
-  color: #9b9b9b;
-  font-size: 13px; 
-  font-family: 'Open Sans', sans-serif;
-}
-.footer .col-md-12 {
-  text-align: center;
-  color: #9b9b9b; 
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 50px;
-}
-.footer {
-  background-color: #1d1d1f;
-  position: relative;
-  display: block;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  padding: 40px 0 10px 0;
-  font-weight: 600;
-}
 /*-------------SOUNDCLOUD EMBED--------*/
 
 .soundcloud_embed {
@@ -1192,7 +1161,7 @@ body {
   .media-title-block {
     height: 50vh;
   }
-  .footer .col-md-3 {
+  footer .col-md-3 {
     margin-bottom: 20px;
     width: 50%;
     float: left;
@@ -1289,8 +1258,8 @@ body {
   .contact-icon {
     margin-right: 15px;
   }
-  .footer .col-md-3 a p,
-  .footer .col-md-12 p {
+  footer .col-md-3 a p,
+  footer .col-md-12 p {
     font-size: 11px;
   }
   .slider:hover {

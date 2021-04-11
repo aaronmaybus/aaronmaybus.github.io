@@ -238,7 +238,7 @@ p {
   overflow: hidden;
 }
 .block.about {
-  background: #161622;
+  background-image: linear-gradient(0deg,#191926,rgba(25,25,38,.95) 65%,rgba(25,25,38,.55) 90%,rgba(25,25,38,0));
 }
 .block h2 {
   margin-bottom: 30px;
@@ -353,7 +353,7 @@ p {
 
 .packages {
   height: 100%;
-  background: #1b1b1b;
+  background: rgba(23,23,30,.85);
   padding: 20px 40px 40px 40px;
 }
 .packages * {
@@ -711,6 +711,7 @@ form .col-md-12 textarea {
   font-size: 12px;   
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  text-align: center;
 }
 .copyright {
   color: white;
@@ -839,6 +840,7 @@ body {
   margin-top: 10px;
   font-size: 13px; 
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .footer .col-md-3 a p {

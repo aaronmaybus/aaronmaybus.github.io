@@ -523,6 +523,9 @@ body {
 .juicer-feed.modern .j-poster {
   display: none;
 }
+.juicer-feed .feed-item .j-message, .juicer-feed .feed-item .j-message p {
+  font-size: 16px;
+}
 /*------------PACKAGES SECTION-----------*/
 
 .packages {

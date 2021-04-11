@@ -104,10 +104,12 @@ function truncateInstagramPostString(){
   });
 }
 function listenForJuicerClick(){
-  $('.juicer-feed .j-paginate').click(function(){
+  $('.j-paginate').click(function(){
     setTimeout(function(){
       truncateInstagramPostString();
-    }, 1500);
+      // Re-attach the event listener to any new elements
+      listenForJuicerClick();
+    }, 800);
   });
   $('.feed-item').click(function(){
     setTimeout(function(){

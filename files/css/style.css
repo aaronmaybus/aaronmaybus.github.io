@@ -1183,11 +1183,12 @@ footer a:hover {
   }
   .packages .package_link {
     width: 100%;
+    margin-bottom: 30px;
   }
   .packages .package {
+    width: 100%;
     height: 300px;
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 auto;
   }
   .packages .package img {
     width: 100%;

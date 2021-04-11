@@ -432,7 +432,7 @@ body {
 
 .packages {
   height: 100%;
-  background: rgba(23,23,30,.96);
+  background: rgb(23,23,30);
   padding: 20px 40px 40px 40px;
 }
 .packages * {
@@ -746,7 +746,6 @@ form .col-md-12 textarea {
   color: white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  user-select: none;
   transform: translateZ(0) perspective(999px)
 }
 .caption .center-middle {
@@ -757,7 +756,7 @@ form .col-md-12 textarea {
 /*------------------------FOOTER------------------------*/
 
 footer {
-  background-image: linear-gradient(0deg,#2a2936,#191926 90%);
+  background-image: linear-gradient(180deg,#2a2936,#191926 90%);
   position: relative;
   height: 100%;
   width: 100%;

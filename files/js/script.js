@@ -40,14 +40,16 @@ function makeNavSticky(){
   } 
 }
 function hoverPackages(){
-  $('.package_link').hover(
-    function() {
-      $(".package_link").not(this).addClass("fade_out");
-    },
-     function() {
-      $(".package_link").not(this).removeClass("fade_out");
-    },
-  );
+  if($(window).width() > 991){
+    $('.package_link').hover(
+      function() {
+        $(".package_link").not(this).addClass("fade_out");
+      },
+       function() {
+        $(".package_link").not(this).removeClass("fade_out");
+      },
+    );
+  }
 }
 function bindVelocity(){
   // bind click event to all internal page anchors

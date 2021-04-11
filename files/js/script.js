@@ -129,9 +129,9 @@ $(window).resize(function () {
   // Remove the fade_out class from any of the package links
   // in case they were hovered when the resize occurred
   $(".package_link").removeClass("fade_out");
-  $('.center').slick('unslick');
-  var currentSlide = $('.center').slick('slickCurrentSlide');
-  currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);
+  // $('.center').slick('unslick');
+  // var currentSlide = $('.center').slick('slickCurrentSlide');
+  // currentSlide = $('.center').slick('slickGoTo', currentSlide + 1);
 });
 Pace.restart();
 Pace.on("done", function(){

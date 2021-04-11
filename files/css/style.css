@@ -137,6 +137,7 @@ body {
   border-radius: 50px;
   background: unset;
   padding: 0;
+  color: #fff;
 }
 .btn-animated:hover,
 .btn-purple:hover {

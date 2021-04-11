@@ -105,11 +105,16 @@ function truncateInstagramPostString(){
 }
 function listenForJuicerClick(){
   $('.j-paginate').click(function(){
-    setTimeout(function(){
+    // Poll Instagram posts load to remove text every 100ms
+    var poll_load = setInterval(function(){
       truncateInstagramPostString();
       // Re-attach the event listener to any new elements
       listenForJuicerClick();
-    }, 800);
+    }, 100);
+    // Stop interval polling after 1.5 seconds
+    setTimeout(function(){
+      clearTimeout(poll_load);
+    }, 1500)
   });
   $('.feed-item').click(function(){
     setTimeout(function(){
@@ -148,6 +153,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 4000
   });
+
 
   $('body').scrollspy({
     target: '#topnav',

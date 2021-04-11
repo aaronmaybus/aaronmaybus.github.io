@@ -21,9 +21,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 } 
-body {
-  -webkit-transform: translate3d(0,0,0)
-}
+
 /*-----PAGE LOAD BAR-----*/
 
 .loading {
@@ -787,6 +785,7 @@ form .col-md-12 textarea {
   transition: all 0.3s ease;
   cursor: grab;
   transform: perspective(999px) translateZ(0);
+  -webkit-transform: translate3d(0,0,0);
   backface-visibility: hidden;
 }
 .slider:hover { 

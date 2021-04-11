@@ -31,7 +31,7 @@ body {
   bottom: 0;
   background: #1b1b1b;
   z-index : 1001; 
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   pointer-events: all;
   /*ENABLE FOR DEBUG*/
   /*display: none;*/
@@ -56,6 +56,9 @@ body {
   opacity: 0;
   transition: opacity 1s ease;
   backface-visibility: hidden;
+}
+.pace.pace-inactive .pace-progress {
+  display: none;
 }
 .pace .pace-progress {
   position: fixed;

@@ -214,10 +214,10 @@ body.no_scroll {
   animation-delay: 0.5s;
 }
 .title-main .overflow_hide:nth-child(1) span:nth-child(2) {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 .title-main .overflow_hide:nth-child(1) span:nth-child(3) {
-  animation-delay: 1.1s;
+  animation-delay: 0.9s;
 }
 
 /*SECOND LINE*/
@@ -514,7 +514,7 @@ body.no_scroll {
   right: unset;
   display: flex;
   justify-content: space-between;
-  bottom: 10px;
+  bottom: 10px !important;
 }
 .j-post-overlay.juicer-feed .j-navigate .j-previous {
   margin-left: 10px;
@@ -573,15 +573,15 @@ body.no_scroll {
   max-width: 1080px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 .packages .package_link {
   display: block;
-  width: 33%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 33.3333%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .packages .package_link:hover {
   text-decoration: none;
@@ -626,8 +626,9 @@ body.no_scroll {
   border-radius: 7px;
 }
 .packages .package .image_overlay {
-  background: rgba(0, 0, 0, 0.65);
   z-index: 0;
+  background-image: linear-gradient(0deg, #150737, #030c2b);
+  opacity: 0.5;
 }
 .packages .package .text {
   width: 100%;
@@ -649,10 +650,12 @@ body.no_scroll {
 
 .packages .package_link:hover {
   transform: perspective(999px) scale3d(1.03, 1.03, 1);
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   width: 40%;
 }
-.packages .package:hover img {
+.packages .package_link:hover .package {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.packages .package_link:hover .package img {
   transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%);
 }
 

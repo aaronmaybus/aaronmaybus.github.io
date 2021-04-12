@@ -116,22 +116,10 @@ function listenForJuicerClick(){
       clearTimeout(poll_load);
     }, 1500)
   });
-  $('.j-next').click(function(){
-    setTimeout(function(){
-      listenForJuicerClick();
-      truncateInstagramPostString();
-    }, 1)
-  });
-  $('.j-previous').click(function(){
-    setTimeout(function(){
-      listenForJuicerClick();
-      truncateInstagramPostString();
-    }, 1)
-  });
-  $('.feed-item').click(function(){
+  $(document).click(function(){
     setTimeout(function(){
       truncateInstagramPostString();
-    }, 10);
+    }, 10)
   });
 }
 $(window).scroll(function() {

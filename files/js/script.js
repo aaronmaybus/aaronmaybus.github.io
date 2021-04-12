@@ -135,8 +135,12 @@ $(window).resize(function () {
 });
 Pace.restart();
 Pace.on("done", function(){
+
+  // Allow scrolling
+  $('body').removeClass('no_scroll');
+
   var y = $(window).scrollTop();  //your current y position on the page
-  $('.loading').addClass("disappear")
+  $('.loading').addClass("disappear");
 
   // Only show main text banner after loading complete
   $('.title-main').css('display', 'block');

@@ -40,8 +40,8 @@ body.no_scroll {
   /*display: none;*/
 }
 .loading.disappear {
-/*  pointer-events: none;
-  opacity: 0;*/
+  pointer-events: none;
+  opacity: 0;
 }
 .loader-container {
   position: absolute;
@@ -86,7 +86,7 @@ body.no_scroll {
   z-index: 2000;
 }
 .pace.pace-inactive .pace-progress {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 .pace .pace-progress {
   position: relative;

@@ -84,7 +84,7 @@ function bindVelocity(){
     // scroll to each target
       $(target).velocity("scroll", { 
         duration: 1000,
-        offset: -35
+        offset: -55
       });
     }
   });
@@ -138,7 +138,6 @@ function bubbleButtonAnim(){
         blob.addClass("expand");
     },20);
   });
-
   $('.btn-animated').on('mouseleave', function(e){
     ofs = $(this).offset();
     x = (e.pageX - ofs.left);

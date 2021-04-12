@@ -84,6 +84,11 @@ body.no_scroll {
   overflow: hidden;
   left: calc(0% + 25vw);
   z-index: 2000;
+  transition: opacity 0.5s ease;
+}
+.pace.disappear {
+  pointer-events: none;
+  opacity: 0;
 }
 .pace.pace-inactive {
   pointer-events: none;
@@ -98,6 +103,8 @@ body.no_scroll {
   top: 50%;
   margin-top: 80px;
   height: 5px;
+  border-radius: 50px;
+  overflow: hidden;
   background-image: linear-gradient(91deg,#a000f5,#7b00d1 47%,#6300ba);
   transition: opacity 0.5s ease 0.5s;
 }
@@ -128,7 +135,7 @@ body.no_scroll {
   border: 2px solid #a000f5;
   color: transparent;
   opacity: 0;
-  height: 35px;
+  height: 50px;
   width: 150px;
   transition: all 0.3s ease;
 }
@@ -136,8 +143,8 @@ body.no_scroll {
   transition: all 0.2s ease-in-out;
   margin-top: 20px;
   opacity: 1;
-  height: 40px;
-  width: 125px;
+  height: 35px;
+  width: 120px;
   border-radius: 50px;
   background: unset;
   padding: 0;
@@ -1557,9 +1564,6 @@ footer a:hover {
   .navbar-nav > li,
   .navbar-nav > li.active {
     border-bottom: 1px solid #d5d5d5 !important;
-  }
-  .btn-animated {
-    font-size: 12px;
   }
   .navbar-default .navbar-nav > li > a.active {
     border-bottom: none;

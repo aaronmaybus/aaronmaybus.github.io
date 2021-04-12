@@ -541,7 +541,7 @@ body.no_scroll {
 }
 .j-post-overlay.juicer-feed .j-bottom {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
 }
 .j-overlay .j-close {
   height: 16px;
@@ -553,6 +553,9 @@ body.no_scroll {
 }
 .juicer-feed .feed-item .j-message, .juicer-feed .feed-item .j-message p {
   font-size: 16px;
+}
+.j-post-overlay.juicer-feed {
+  padding-bottom: 40px;
 }
 /*------------PACKAGES SECTION-----------*/
 
@@ -1388,6 +1391,9 @@ footer a:hover {
   }
   .j-post-overlay .j-image {
     margin-top: 30px;
+  }
+  .j-post-overlay.juicer-feed {
+    padding-bottom: 0px;
   }
 }
 @media only screen and (max-width: 767px) {

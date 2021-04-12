@@ -147,7 +147,32 @@ body.no_scroll {
 .btn-purple:hover {
   color: #fff;
   text-decoration: none;
-  background: #a000f5;  
+}
+.btn-purple:hover {
+  background: #a000f5;
+}
+/* BLOB ANIMATION */
+
+.blob {
+  z-index:-1;
+  position:absolute;
+  width:2px;
+  height:2px;
+  margin-left: 0;
+  margin-top: 0;
+  border-radius: 50%;
+  border-color: #a000f5;
+  border-width: 1px;
+  border-style: solid;
+  transition: border-width 0.7s ease-in-out,margin-left 0.7s ease-in-out,margin-top 0.7s ease-in-out;
+}
+.expand{
+  border-color: #a000f5;
+  border-width: 300px;
+  border-style: solid;
+  transition: border-width 0.7s ease-in-out,margin-left 0.7s ease-in-out,margin-top 0.7s ease-in-out;
+  margin-left:-300px;
+  margin-top:-300px;
 }
 
 /*Add pattern overlay to video for better text readability and to hide video flaws*/

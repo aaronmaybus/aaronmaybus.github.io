@@ -34,10 +34,10 @@ body.no_scroll {
   bottom: 0;
   background: #1b1b1b;
   z-index : 1001; 
-  transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease;
   pointer-events: all;
   /*ENABLE FOR DEBUG*/
-  /*display: none;*/
+  display: none;
 }
 .loading.disappear {
   pointer-events: none;
@@ -505,11 +505,13 @@ body.no_scroll {
 }
 .juicer-feed.modern li.feed-item {
   cursor: pointer;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  border-width: 0 !important;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .j-overlay-content,
-.j-post-overlay.juicer-feed {
+.j-post-overlay.juicer-feed,
+.juicer-feed.modern li.feed-item {
+  transition: all 0.5s ease;
   background: #17171e !important;
   border-radius: 7px;
   overflow: hidden;

@@ -37,7 +37,7 @@ body.no_scroll {
   transition: opacity 0.5s ease;
   pointer-events: all;
   /*ENABLE FOR DEBUG*/
-  display: none;
+  /*display: none;*/
 }
 .loading.disappear {
   pointer-events: none;

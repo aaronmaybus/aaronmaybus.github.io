@@ -3,6 +3,7 @@ p, h1, h2, h3 {
 }
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -129,7 +130,7 @@ body.no_scroll {
   margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
   cursor: pointer;
   border: 2px solid #a000f5;
@@ -238,6 +239,7 @@ body.no_scroll {
   margin-bottom: 5px;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 /*FIRST LINE*/
@@ -537,6 +539,7 @@ body.no_scroll {
   color: #fff !important;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .j-post-overlay.juicer-feed a.juicer-button:hover,
 .juicer-feed .j-paginate:hover {
@@ -899,6 +902,7 @@ form .col-md-12 textarea {
 }
 .caption .center-middle h2 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-align: center;
   margin: 0;
   margin-bottom: 10px;
@@ -961,6 +965,7 @@ footer .footer_item .social_type {
   margin-top: 10px;
   font-size: 13px; 
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   text-align: center;
 }
 footer .footer_item p {
@@ -1146,6 +1151,7 @@ footer a:hover {
 }
 #navbar {
   background-color: transparent;
+  border-top: unset;
 }
 .navbar-default .navbar-text {
   color: #000000;
@@ -1204,6 +1210,7 @@ footer a:hover {
 .navbar-default .navbar-nav>li>a {
   color: white;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 14px;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -1217,7 +1224,16 @@ footer a:hover {
   padding: 0px;
 }
 .navbar-toggle {
+  margin-top: 5px;
+  margin-bottom: 3px;
   float: left;
+}
+.navbar-toggle p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #9b9b9b;
+  letter-spacing: 1px;
 }
 .navbar-default .navbar-toggle,
 .navbar-default-home .navbar-toggle {
@@ -1559,6 +1575,9 @@ footer a:hover {
   }
   .j-post-overlay.juicer-feed .j-navigate {
     bottom: 25px !important;
+  }
+  .title-main .overflow_hide span {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 479px) {

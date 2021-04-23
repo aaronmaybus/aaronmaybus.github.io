@@ -134,9 +134,10 @@ Pace.on("done", function(){
 
   // Allow scrolling
   $('body').removeClass('no_scroll');
-  var y = $(window).scrollTop();  //your current y position on the page
-  $('.pace').addClass('disappear');
-  $('.loading').addClass("disappear");
+  setTimeout(function(){
+    $('.pace').addClass('disappear');
+    $('.loading').addClass("disappear");
+  }, 700);
 
   // Only show main text banner after loading complete
   $('.title-main').css('display', 'block');

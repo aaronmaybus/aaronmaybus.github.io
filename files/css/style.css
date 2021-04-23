@@ -1500,7 +1500,7 @@ footer a:hover {
   }
   .navbar-nav li {
     width: 100%;
-    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #5a5a5a;
   }
   .navbar-default .navbar-nav .active {
     border-bottom: none;

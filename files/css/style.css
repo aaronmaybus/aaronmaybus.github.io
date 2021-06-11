@@ -396,6 +396,9 @@ body.no_scroll {
 .block.about * {
   -webkit-transform: translate3d(0,0,0);
 }
+.block.about p {
+  text-align: center;
+}
 .block h2 {
   margin-top: 30px;
   margin-bottom: 30px;

@@ -858,7 +858,6 @@ form .col-md-12 textarea {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 50px;
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: grab;
@@ -925,6 +924,14 @@ form .col-md-12 textarea {
 .image-slider iframe {
   width: 100%;
   min-height: 240px;
+}
+.read-more-reviews-btn {
+  margin: 0 auto 50px;
+  width: max-content;
+}
+.read-more-reviews-btn .btn-animated {
+  opacity: 1;
+  color: white;
 }
 .caption .center-middle h2 {
   font-family: 'Montserrat', sans-serif;

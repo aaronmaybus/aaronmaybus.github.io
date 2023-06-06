@@ -152,12 +152,13 @@ $(document).ready(function () {
     centerPadding: '60px',
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
     // autoplay: false
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 7000,
     // draggable: true,
-    // pauseOnHover: true,
-    // pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnFocus: true,
   })
 
   $('body').scrollspy({

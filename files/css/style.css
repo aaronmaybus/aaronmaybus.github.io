@@ -857,7 +857,6 @@ form .col-md-12 textarea {
   height: 270px;
   display: block;
   margin: 0 auto;
-  overflow: hidden;
   margin-top: 30px;
   margin-bottom: 50px;
   border-radius: 6px;
@@ -871,7 +870,7 @@ form .col-md-12 textarea {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 } */
 .slick-prev {
-  left: -25px;
+  left: -70px;
 }
 .slick-prev,
 .slick-next {
@@ -879,25 +878,31 @@ form .col-md-12 textarea {
   line-height: 0;
   position: absolute;
   top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
-  border: none;
+  border: 2px solid #a000f5;
   outline: none;
-  background: white;
-  opacity: 0;
+  background: transparent;
+  border-radius: 10px;
+  padding: 16px;
 }
 .slick-next {
   right: -70px;
 }
 .slick-next:before {
   content: '→';
+}
+.slick-prev:before {
+  content: '←';
 }
 .slick-prev:before,
 .slick-next:before {
@@ -919,7 +924,7 @@ form .col-md-12 textarea {
 }
 .image-slider iframe {
   width: 100%;
-  min-height: 250px;
+  min-height: 240px;
 }
 .caption .center-middle h2 {
   font-family: 'Montserrat', sans-serif;
@@ -1403,8 +1408,7 @@ footer a:hover {
     font-size: 40px;
   }
   .slider {
-    height: 570px;
-    width: 600px;
+    width: 100%;
   }
   .image-slider img {
     width: 100%;
@@ -1606,6 +1610,17 @@ footer a:hover {
   .title-main .overflow_hide span {
     font-size: 30px;
   }
+  .slick-next,
+  .slick-prev {
+    top: unset;
+    bottom: 20px !important;
+  }
+  .slick-next {
+    right: 0px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .title-main .overflow_hide span {
@@ -1619,7 +1634,7 @@ footer a:hover {
   }
   .slider {
     height: 345px;
-    width: 350px;
+    width: 100%;
   }
   .caption {
     height: 345px;
@@ -1691,15 +1706,15 @@ footer a:hover {
 
   footer .links {
   }
+
+  .slick-next,
+  .slick-prev {
+    top: unset;
+    bottom: 40px !important;
+  }
 }
 @media only screen and (max-width: 400px) {
-  .slider {
-    height: 365px;
-    width: 320px;
-  }
-
   /*PACKAGES SECTION*/
-
   .packages .package {
     width: 320px;
   }

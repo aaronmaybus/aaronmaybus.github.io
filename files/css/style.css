@@ -866,10 +866,10 @@ form .col-md-12 textarea {
   transform: perspective(999px) translateZ(0);
   backface-visibility: hidden;
 }
-.slider:hover {
+/* .slider:hover {
   transform: translateZ(0) perspective(999px) scale3d(1.01, 1.01, 1);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+} */
 .slick-prev {
   left: -25px;
 }
@@ -911,12 +911,15 @@ form .col-md-12 textarea {
 }
 .image-slider {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   overflow: hidden;
+  background: white;
+  border-radius: 6px;
 }
 .image-slider iframe {
   width: 100%;
-  min-height: 270px;
+  min-height: 250px;
 }
 .caption .center-middle h2 {
   font-family: 'Montserrat', sans-serif;

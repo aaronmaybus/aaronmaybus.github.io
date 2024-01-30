@@ -63,7 +63,6 @@ body.no_scroll {
   transform: translateZ(0) translate(-50%, -50%);
   width: 100px;
   opacity: 0;
-  backface-visibility: hidden;
 }
 .loading .logo-white {
   animation: fade-in-out 3s linear infinite forwards;
@@ -526,8 +525,6 @@ body.no_scroll {
 }
 .juicer-feed.modern li.feed-item,
 .juicer-feed.modern li.feed-item * {
-  transform: translateZ(0) perspective(999px);
-  backface-visibility: hidden;
   user-select: none;
 }
 .juicer-feed.modern li.feed-item {
@@ -552,10 +549,10 @@ body.no_scroll {
 }
 /*Hover effects*/
 .juicer-feed.modern li.feed-item:hover {
-  transform: scale3d(1.02, 1.02, 1) translateZ(0) perspective(999px);
+  transform: scale(1.02, 1.02);
 }
 .juicer-feed.modern li.feed-item:hover .j-image img {
-  transform: scale3d(1.05, 1.05, 1) translateZ(0) perspective(999px);
+  transform: scale(1.05, 1.05);
 }
 .j-post-overlay.juicer-feed a.juicer-button,
 .juicer-feed .j-paginate {
@@ -628,7 +625,6 @@ body.no_scroll {
   padding: 40px;
 }
 .packages * {
-  transform: perspective(999px) translateZ(0);
   transition: all 0.5s ease;
 }
 .wrap_contain {
@@ -657,24 +653,24 @@ body.no_scroll {
   align-items: center;
   border-radius: 7px;
   overflow: hidden;
-  backface-visibility: hidden;
+
   cursor: pointer;
 }
 .packages .package_link.fade_out_permanent {
   opacity: 0.3;
-  transform: perspective(999px) translateZ(0) scale3d(0.95, 0.95, 1);
+  transform: scale(0.95);
   width: 20%;
 }
 .packages .package_link.fade_out {
   opacity: 0.3 !important;
-  transform: perspective(999px) translateZ(0) scale3d(0.95, 0.95, 1) !important;
+  transform: scale(0.95) !important;
   width: 20% !important;
 }
 .packages .package_link.fade_out_permanent .text {
-  transform: perspective(999px) translateZ(0) scale3d(0.9, 0.9, 1);
+  transform: scale(0.9);
 }
 .packages .package_link.fade_out .text {
-  transform: perspective(999px) translateZ(0) scale3d(0.9, 0.9, 1) !important;
+  transform: scale(0.9) !important;
 }
 .packages .package img {
   position: absolute;
@@ -683,8 +679,7 @@ body.no_scroll {
   height: 100%;
   width: auto;
   z-index: 0;
-  backface-visibility: hidden;
-  transform: perspective(999px) translateZ(0) scale3d(1.05, 1.05, 1) translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 .packages .package .image_container,
 .packages .package .image_overlay {
@@ -721,7 +716,7 @@ body.no_scroll {
 /*Select effects*/
 
 .packages .package_link.make_center {
-  transform: perspective(999px) scale3d(1.03, 1.03, 1);
+  transform: scale(1.03, 1.03);
   width: 40%;
   opacity: 1;
 }
@@ -729,7 +724,7 @@ body.no_scroll {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .packages .package_link.make_center .package img {
-  transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 
 /*------------CONTACT SECTION-----------*/
@@ -869,10 +864,9 @@ form .col-md-12 textarea {
   transition: all 0.3s ease;
   cursor: grab;
   transform: perspective(999px) translateZ(0);
-  backface-visibility: hidden;
 }
 /* .slider:hover {
-  transform: translateZ(0) perspective(999px) scale3d(1.01, 1.01, 1);
+  transform:  scale(1.01, 1.01);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 } */
 .slick-prev {
@@ -965,7 +959,7 @@ form .col-md-12 textarea {
   color: white;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  transform: translateZ(0) perspective(999px);
+  transform: ;
 }
 .caption .center-middle {
   padding: 10px 15px 10px 15px;
@@ -1367,7 +1361,7 @@ footer a:hover {
 
 @media only screen and (min-width: 991px) {
   .packages .package_link:hover {
-    transform: perspective(999px) scale3d(1.03, 1.03, 1) !important;
+    transform: perspective(999px) scale(1.03, 1.03) !important;
     width: 40% !important;
     opacity: 1;
   }
@@ -1375,7 +1369,7 @@ footer a:hover {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
   }
   .packages .package_link:hover .package img {
-    transform: translateZ(0) perspective(999px) scale3d(1, 1, 1) translate(-50%, 0%) !important;
+    transform: scale(1, 1) translate(-50%, 0%) !important;
   }
 }
 @media only screen and (max-width: 991px) {
